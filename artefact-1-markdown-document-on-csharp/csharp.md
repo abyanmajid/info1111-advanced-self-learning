@@ -114,3 +114,144 @@ public class Car
         Console.WriteLine($"Make: {make}, Model: {model}, Year: {year}");
     }
 }
+```
+
+### Objects
+
+Objects are instances of classes.
+```csharp
+Car myCar = new Car("Toyota", "Corolla", 2020);
+myCar.DisplayInfo();
+```
+
+### Methods
+
+Methods define the behavior of a class.
+```csharp
+public void Drive()
+{
+    Cosnole.WriteLine("The car is driving");
+}
+```
+
+## Functions and Control Flow Statements
+
+### Functions
+
+Functions (also known as methods in C\#) are blocks of code that perform a task.
+
+### Decision Statements
+
+#### If statement
+
+```csharp
+if (condition)
+{
+    // Code to execute if condition is true
+}
+```
+
+#### If-else statement
+
+```csharp
+if (condition)
+{
+    // Code to execute if condition is true
+}
+else
+{
+    // Code to execute if condition is false
+}
+```
+
+#### Else if statement
+
+```csharp
+if (condition1)
+{
+    // Code to execute if condition1 is true
+}
+else if (condition2)
+{
+    // Code to execute if condition2 is true
+}
+else
+{
+    // Code to execute if none of the above conditions are true
+}
+```
+
+#### Switch statement
+
+```csharp
+switch (variable)
+{
+    case value1:
+        // Code to execute if variable equals value1
+        break;
+    case value2:
+        // Code to execute if variable equals value2
+        break;
+    default:
+        // Code to execute if variable doesn't match any case
+        break;
+}
+```
+
+### Loop statements
+
+#### for loop
+
+```csharp
+for (int i = 0; i < 10; i++)
+{
+    Console.WriteLine(i);
+}
+```
+
+#### foreach loop
+
+
+#### while loop
+
+
+#### do-while loop
+
+### Shorthand symbols and type casting
+
+#### Shorthand symbols
+
+Ternary operators
+```csharp
+int number = 10;
+string result = (number > 5) ? "Greater than 5" : "Less than or equal to 5";
+```
+
+#### Type casting
+
+Implicit casting is done automatically when a value is converted to a larger data type
+
+```csharp
+int num = 123;
+double doubleNum = num; // Automatic casting: int to double
+```
+
+Explicit casting must be done manually be placing the type in aprantheses in front of the value
+
+```
+double doubleNum = 123.45;
+int num = (int)doubleNum; // Manual casting: double to int
+```
+
+Convert class using `Convert`
+
+```
+string strNum = "123";
+int num = Convert.ToInt32(strNum);
+```
+
+Parse methods using `Parse`
+```csharp
+string strNum = "123";
+int num = int.Parse(strNum);
+```
