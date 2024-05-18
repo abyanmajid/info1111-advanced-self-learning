@@ -30,3 +30,8 @@ Then, run the service
 cd artefact-3-authservice-web-api
 dotnet run
 ```
+
+Do a health check to verify the API is live
+```bash
+curl <host>:<port>
+```
